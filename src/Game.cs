@@ -27,7 +27,7 @@ public class Game
         {
             ClearBackground(Color.Black);
             
-            scene.update();
+            scene.Update();
             BeginDrawing();
             BeginMode2D(camera);
             scene.render();
