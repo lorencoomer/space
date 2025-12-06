@@ -1,0 +1,3 @@
+﻿using gravity;
+
+new Game();
