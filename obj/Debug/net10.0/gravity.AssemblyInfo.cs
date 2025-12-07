@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gravity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6daae5fecf8f8cca2e6d524e7bfc37384faff5b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cff93e5b609f30aa80a17651b9789a00559ac2b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("gravity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gravity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
