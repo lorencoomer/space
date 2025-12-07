@@ -23,8 +23,17 @@ public class Game
         SetTargetFPS(60);
         SetExitKey(KeyboardKey.Escape);
         
+        InitAudioDevice();
+        Sound resonance = LoadSound("assets/resonance.wav");
+        bool played = false;
+        
         while (!WindowShouldClose())
         {
+            if (!played)
+            {
+                PlaySound(resonance);
+                played = true;
+            }
             ClearBackground(Color.Black);
             
             scene.Update();
@@ -33,8 +42,11 @@ public class Game
             scene.render();
             EndMode2D();
             EndDrawing();
-            
-            SwapScreenBuffer();
         }
+        
+        UnloadSound(resonance);
+        CloseAudioDevice();
+        CloseWindow();
     }
+    
 }
