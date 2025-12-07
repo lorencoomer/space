@@ -7,7 +7,6 @@ namespace gravity;
 
 public class Game
 {
-
     private static Camera2D camera;
     public Game()
     {
@@ -17,23 +16,14 @@ public class Game
         camera.Offset = GetScreenCenter();
         camera.Target = Vector2.Zero;
         camera.Rotation = 0;
-        camera.Zoom = 0.5f;
+        camera.Zoom = 1f;
         
-        InitWindow(800, 600, "Space");
+        InitWindow(1200, 800, "Space");
         SetTargetFPS(60);
         SetExitKey(KeyboardKey.Escape);
         
-        InitAudioDevice();
-        Sound resonance = LoadSound("assets/resonance.wav");
-        bool played = false;
-        
         while (!WindowShouldClose())
         {
-            if (!played)
-            {
-                PlaySound(resonance);
-                played = true;
-            }
             ClearBackground(Color.Black);
             
             scene.Update();
@@ -43,10 +33,6 @@ public class Game
             EndMode2D();
             EndDrawing();
         }
-        
-        UnloadSound(resonance);
-        CloseAudioDevice();
-        CloseWindow();
     }
     
 }
