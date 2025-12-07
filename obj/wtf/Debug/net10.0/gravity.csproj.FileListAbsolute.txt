@@ -1,9 +1,3 @@
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.csproj.AssemblyReference.cache
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.GeneratedMSBuildEditorConfig.editorconfig
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.AssemblyInfoInputs.cache
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.AssemblyInfo.cs
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.csproj.CoreCompileInputs.cache
-/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.sourcelink.json
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/gravity
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/gravity.deps.json
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/gravity.runtimeconfig.json
@@ -15,9 +9,15 @@
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/runtimes/osx-x64/native/libraylib.dylib
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/runtimes/win-x64/native/raylib.dll
 /home/loren/Documents/code/csharp/gravity/gravity/bin/Debug/net10.0/runtimes/win-x86/native/raylib.dll
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.csproj.AssemblyReference.cache
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.GeneratedMSBuildEditorConfig.editorconfig
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.AssemblyInfoInputs.cache
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.AssemblyInfo.cs
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.csproj.CoreCompileInputs.cache
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.csproj.Up2Date
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.dll
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/refint/gravity.dll
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.pdb
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.genruntimeconfig.cache
 /home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/ref/gravity.dll
+/home/loren/Documents/code/csharp/gravity/gravity/obj/Debug/net10.0/gravity.sourcelink.json
