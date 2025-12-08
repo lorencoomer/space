@@ -9,47 +9,47 @@ public class Scene
     
   public Scene()
   {
+    Random random = new Random();
+    
     entities = new List<Entity>();
-    entities.Add(new Entity()
-    {
-      position = new Vector2(350,350),
-      mass = 50000,
-      radius = 10,
-      velocity = new Vector2(0.3f,-0.4f),
-    });
-
+    // entities.Add(new Entity()
+    // {
+    //   position = new Vector2(350,350),
+    //   mass = 50000,
+    //   radius = 10,
+    //   velocity = new Vector2(0.3f,-0.4f),
+    // });
+    
     entities.Add(new Entity()
     {
       position = new Vector2(650,425),
       mass = 5000000,
-      radius = 50,
-    });
-
-    entities.Add(new Entity()
-    {
-      position = new Vector2(200,150),
-      mass = 75000,
       radius = 30,
     });
     
-    Random random = new Random();
-    
-    for (int i = 0; i < 30; i++)
-    {
-      entities.Add(new Entity()
-          {
-            position = new Vector2(
-              random.Next(100, 700),
-              random.Next(100, 700)
-            ),
-            mass = 5000,
-            radius = 2,
-            velocity = new Vector2(
-              (float)(random.NextDouble() * 0.1 - 0.05),
-              (float)(random.NextDouble() * 0.1 - 0.05)
-            ),
-          });
-    }
+    // entities.Add(new Entity()
+    // {
+    //   position = new Vector2(200,150),
+    //   mass = 75000,
+    //   radius = 30,
+    // });
+    //
+    // for (int i = 0; i < 30; i++)
+    // {
+    //   entities.Add(new Entity()
+    //       {
+    //         position = new Vector2(
+    //           random.Next(100, 700),
+    //           random.Next(100, 700)
+    //         ),
+    //         mass = 5000,
+    //         radius = 2,
+    //         velocity = new Vector2(
+    //           (float)(random.NextDouble() * 0.1 - 0.05),
+    //           (float)(random.NextDouble() * 0.1 - 0.05)
+    //         ),
+    //       });
+    // }
     
   }
 
@@ -59,21 +59,18 @@ public class Scene
     {
       foreach (Entity affectingentity in entities)
       {
-        if (affectingentity == affectedentity)
-          continue;
+        if (affectingentity == affectedentity) continue;
   
         float distance = Vector2.Distance(
           affectingentity.position,
           affectedentity.position
         );
   
-        if (distance == 0)
-          continue;
+        if (distance == 0) continue;
   
         float minDistance = affectingentity.radius + affectedentity.radius;
   
-        if (distance < minDistance)
-          distance = minDistance;
+        if (distance < minDistance) distance = minDistance;
   
         float GravConst = 1f;
         float force = (GravConst * affectingentity.mass) / (distance * distance);
@@ -92,15 +89,24 @@ public class Scene
     {
       entity.update();
     }
-
-    if (IsMouseButtonPressed(MouseButton.Left))
+    
+    Random random = new Random();
+    
+    if (IsMouseButtonDown(MouseButton.Left))
     {
-      entities.Add(new Entity()
+      for (int i = 0; i < 3; i++)
       {
-        position = new Vector2(GetMousePosition().X, GetMousePosition().Y),
-        mass = 5000,
-        radius = 2,
-      });
+        entities.Add(new Entity()
+        {
+          position = new Vector2(GetMousePosition().X, GetMousePosition().Y),
+          mass = 5000,
+          radius = 2,
+          velocity = new Vector2(
+            (float)(random.NextDouble() * 0.1 - 0.05),
+            (float)(random.NextDouble() * 0.1 - 0.05)
+          ),
+        });
+      }
     }
   }
 

@@ -6,7 +6,7 @@ using Color = Raylib_cs.Color;
 namespace gravity;
 
 public class Entity
-{
+{ 
     public Vector2 position;
     public Vector2 velocity;
     public float mass;
